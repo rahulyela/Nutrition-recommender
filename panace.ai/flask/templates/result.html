@@ -1,0 +1,92 @@
+
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script>
+        </script>
+        <style>
+          body{
+            background-color: antiquewhite;
+          }
+        </style>
+    </head>
+    <body>
+      <!-- <img class="image"src="./static/images/NutritionImg.jpg"/> -->
+      <h1 style="text-align: center; padding: 10px;">Nutrition Evalution</h1>
+      <table height='60' width='5' border='1' id="table" style="width: 30%;border: 1px solid black;margin-top: 30px;" styleborder='1' class="container" >
+        <tr style="border: 1px solid black" >
+        <th scope="row" width='70%'>NUTRIENTS </th>
+        <th> TOTAL INTAKE</td>
+      </tr>
+      <tr style="border: 1px solid black" >
+        <th scope="row">calories</th>
+        <td>{{v[0]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">total_fat</th>
+        <td>{{v[1]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">saturated fat</th>
+        <td>{{v[1]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">cholesterol</th>
+        <td>{{v[3]}}</td>
+      </tr>
+      <tr style="border: 1px solid black" >
+        <th scope="row">sodium</th>
+        <td>{{v[4]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">vitamin_a</th>
+        <td>{{v[5]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">vitamin_a_rae</th>
+        <td>{{v[6]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">vitamin_b12</th>
+        <td>{{v[7]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">vitamin_b6</th>
+        <td>{{v[8]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">vitamin_c</th>
+        <td>{{v[9]}}</td>
+      </tr>
+      <tr style="border: 1px solid black" >
+        <th scope="row">vitamin_d</th>
+        <td>{{v[10]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">vitamin_e</th>
+        <td>{{v[11]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">vitamin_k</th>
+        <td>{{v[12]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">calcium</th>
+        <td>{{v[13]}}</td>
+      </tr>
+      <tr style="border: 1px solid black" >
+        <th scope="row">Iron</th>
+        <td>{{v[14]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">potassium</th>
+        <td>{{v[15]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">protein</th>
+        <td>{{v[16]}}</td>
+        <tr style="border: 1px solid black" >
+            <th scope="row">glucose</th>
+            <td>{{v[17]}}</td>
+          </tr>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">carbohydrates</th>
+        <td>{{v[18]}}</td>
+      </tr><tr style="border: 1px solid black" >
+        <th scope="row">sugars</th>
+        <td>{{v[19]}}</td>
+      </tr>
+  </table>
+  {% block content %}
+       {% endblock  %}
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+  </html>
+       
